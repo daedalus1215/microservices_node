@@ -44,4 +44,9 @@ app.get('/', async (req, res) => {
     });
 });
 
+app.get('/health', async (req, res) => {
+    console.log('health check');
+    res.jsonp({ 'status': 'ok' });
+})
+
 
